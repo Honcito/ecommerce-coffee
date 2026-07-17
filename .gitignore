@@ -1,0 +1,54 @@
+# ==========================================
+# Notas Personales y Archivos de Texto
+# ==========================================
+*.txt
+
+# ==========================================
+# Dependencias (Node.js / Strapi / Next.js)
+# ==========================================
+node_modules/
+/npm-debug.log*
+/yarn-error.log*
+/yarn-debug.log*
+/.pnpm-debug.log*
+
+# ==========================================
+# Variables de Entorno y Secretos (¡CRÍTICO!)
+# ==========================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.production
+
+# ==========================================
+# Next.js (Frontend)
+# ==========================================
+.next/
+out/
+build/
+
+# ==========================================
+# Strapi (Backend)
+# ==========================================
+# Caché de compilación del panel de administración
+.cache/
+build/
+
+# Base de datos SQLite local (muy común en desarrollo con Strapi)
+.tmp/
+*.db
+*.db-journal
+
+# Archivos subidos localmente (Imágenes/Media del catálogo)
+# Si no ignoras esto, subirás todas las fotos de prueba de tus productos a GitHub
+public/uploads/
+
+# ==========================================
+# Sistema Operativo y Editores
+# ==========================================
+.DS_Store
+*.local
+.vscode/
+.idea/
