@@ -20,6 +20,7 @@ const geistMono = Geist_Mono({
 
 const urbanist = Urbanist({
   subsets: ["latin"],
+  variable: "--font-urbanist",
 });
 
 export const metadata: Metadata = {
@@ -34,14 +35,14 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="es"
+      suppressHydrationWarning
       className={cn(
-        "h-full",
-        "antialiased",
-        urbanist,
-        urbanist,
-        "font-sans",
+        "h-full antialiased font-sans",
+        urbanist.className,
         inter.variable,
+        geistSans.variable,
+        geistMono.variable
       )}
     >
       <body className="min-h-full flex flex-col">
