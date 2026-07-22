@@ -127,3 +127,10 @@
     @apply font-sans;
     }
 }
+
+/* Ocultar el botón flotante de desarrollo de Next.js */
+[data-nextjs-toast],
+[id^="nextjs-dev-tools"],
+nextjs-portal {
+  display: none !important;
+}
